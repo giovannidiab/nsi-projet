@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>L'encodage Des Caracteres Alphanumeriques</title>
+    <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <img src="images/logo.jpg">
+        <h1 id="title1">Dictionnaire</h1>  
+        <img src="images/icon.jpg" id="icon1">
+    </nav>
+    <h2>Ascii</h2>
+    <p>En 1963 sort l’ASCII. Sa première application est pour un téléscripteur, un genre d’imprimante. L’ASCII est codé sur 7 bits, soit 128 possibilités. C’est suffisant pour les caractères non accentués de l’alphabet latin ainsi que la ponctuation et quelques caractères de contrôle. Néanmoins, dès que l’on veut écrire dans d’autres langues que l’anglais, c’est vite compliqué. Les langues latines peuvent s’écrire de façon partielle en omettant les accents, mais tous les autres alphabets sont alors impossibles à retranscrire.</p>
+    <h2>ISO 8859</h2>
+    <p>Les limites de stockage des 128 caractères supplémentaires dans l'encodage des données ne permettent pas d'établir un standard universel de caractères, entraînant des besoins spécifiques par langue, comme les caractères cyrilliques pour les Grecs ou les caractères accentués pour les Français. En réponse, la norme ISO 8859 a été développée, offrant une série de tables de caractères adaptées à différentes langue. Chaque langue bénéficie ainsi d'une page de code spécifique, permettant l'utilisation de ses caractères propres. L'ISO 8859-1 (Latin-1) et Windows-1252 sont les plus utilisés, couvrant l'anglais et la majorité des langues latines, bien que ces systèmes d'encodage présentent des imperfections.</p>
+    <h2>UTF-32</h2>
+    <p>Cet encodage est le plus long qui soit à taille fixe du standard Unicode et c’est aussi le seul de taille fixe qui ne soit pas déprécié. Il permet de représenter l’intégralité des caractères Unicode sur 32 bits, soit quatre octets. On reprend notre exemple précédent et on l’encode en UTF-32BE. L’avantage de cet encoding est d’avoir l’ensemble des caractères de même taille. À cet effet, il n’est presque jamais utilisé pour stocker du texte mais sert plutôt dans des API internes.</p>
+    <h2>UTF-8</h2>
+    <p>C’est incontestablement l’encodage le plus utilisé aujourd’hui. Tant pour le stockage que le transfert d’informations. Sa taille minimale est de huit bits et il peut monter jusqu’à quatre octets pour certains signes. L’UTF-8 a également la particularité d’être totalement rétro-compatible avec l’ASCII. Tout caractère ASCII valide est un caractère UTF-8 valide.</p>
+    <h2>UTF-16</h2>
+    <p>L’UTF-16 est de longueur variable avec des mots de 16 bits. Ainsi, en UTF-16, un signe fait soit deux soit quatre octets. Contrairement à l’UTF-8, l’UTF-16 n’est pas compatible avec l’ASCII – et bien entendu pas compatible non plus avec l’UTF-8. Cependant, UTF-16 est totalement rétro-compatible avec l’UCS-2, le premier encodage Unicode qui était de taille fixe sur deux octets. Ainsi, tout signe valide en UCS-2 l’est aussi en UTF-16 et tout ce qui est encodable en UTF-16 sur un mot est donc un caractère UCS-2 valide.Contrairement à l’UCS-2, qui est limité à la BMP, l’UTF-16 permet d’encoder l’ensemble des caractère de la table Unicode.</p>
+    <a href="index.html"> <button class="simple-button">Revenir A La Page Home</button> </a>
+
+
+
+</div>
+
+
+</body>
+
+
+</html>
